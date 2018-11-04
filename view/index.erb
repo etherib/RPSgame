@@ -1,0 +1,13 @@
+<p><%= @result %></p>
+
+<p>Player: <%= @wins %></p>
+<p>Computer: <%= @losses %></p>
+<p>Ties: <%= @ties %></p>
+
+<a href="/"><button type="button">Play Again</button></a>
+
+<form action="/delete" method="POST">
+  <input type="hidden" name="_method" value="delete">
+  <input type="submit" value="Delete!">
+  <a href="/">Cancel</a>
+</form>
